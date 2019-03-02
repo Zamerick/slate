@@ -1,10 +1,10 @@
-const PurgecssPlugin = require('purgecss-webpack-plugin')
-const glob = require('glob-all')
-const path = require('path')
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+const glob = require('glob-all');
+const path = require('path');
 
 class TailwindExtractor {
   static extract (content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || [] // eslint-disable-line no-useless-escape
+    return content.match(/[A-Za-z0-9-_:\/]+/g) || []; // eslint-disable-line no-useless-escape
   }
 }
 module.exports = {
@@ -25,5 +25,9 @@ module.exports = {
         whitelist: ['background']
       })
     ]
-  }
-}
+  },
+  chainWebpack: config => {
+
+  },
+  transpileDependencies: ['vuex-module-decorators']
+};

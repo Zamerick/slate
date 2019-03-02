@@ -10,12 +10,14 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "moment": "^2.22.2",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
-    "vuex-module-decorators": "^0.9.2"
+    "vuex-module-decorators": "^0.9.7"
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
@@ -38,30 +40,12 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "tailwindcss": "^0.7.2",
+    "tailwindcss-grid": "^1.1.0",
     "ts-jest": "^23.0.0",
     "typescript": "^3.0.0",
     "vue-template-compiler": "^2.5.17",
     "vue-test-loader": "^0.4.1"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/standard",
-      "@vue/typescript"
-    ],
-    "rules": {
-      "semi": [
-        "error",
-        "always"
-      ]
-    },
-    "parserOptions": {
-      "parser": "typescript-eslint-parser"
-    }
   },
   "postcss": {
     "plugins": {
@@ -98,5 +82,5 @@
       "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
     ],
     "testURL": "http://localhost/"
-  }
+  },
 }
