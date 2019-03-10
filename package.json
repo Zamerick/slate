@@ -46,7 +46,6 @@
     "vue-template-compiler": "^2.5.17",
     "vue-test-loader": "^0.4.1"
   },
-  },
   "postcss": {
     "plugins": {
       "tailwindcss": "tailwind.js",
@@ -82,5 +81,5 @@
       "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
     ],
     "testURL": "http://localhost/"
-  },
+  }
 }
