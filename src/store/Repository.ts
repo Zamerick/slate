@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { PostRequest } from '@/store/request_models';
 
 export const API = axios.create({
   baseURL: process.env.VUE_APP_API_URL
