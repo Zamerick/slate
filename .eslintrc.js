@@ -17,6 +17,6 @@ module.exports = {
     "indent": ["error", 2]
   },
   parserOptions: {
-    parser: 'typescript-eslint-parser'
+    parser: '@typescript-eslint/parser'
   }
 }
